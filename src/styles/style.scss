@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .ProjectNewData {
+    @apply container mx-auto my-32;
+  }
+}
+.skeleton-row .container {
+  padding: 20px;
+  min-height: 150px;
+  position: relative;
+}
+
+#skeletonRectangleMediumRight {
+  float: right;
+}
+
+.skeleton {
+  margin-left: 3px;
+}

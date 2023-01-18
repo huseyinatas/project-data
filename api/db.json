@@ -1,0 +1,339 @@
+{
+  "projectNewData": [
+    {
+      "TaskID": 1,
+      "TaskName": "Product concept",
+      "StartDate": "2019-04-01T21:00:00.000Z",
+      "EndDate": "2019-04-20T21:00:00.000Z",
+      "subtasks": [
+        {
+          "TaskID": 2,
+          "TaskName": "Defining the product and its usage",
+          "StartDate": "2019-04-01T21:00:00.000Z",
+          "Duration": 3,
+          "Progress": 30
+        },
+        {
+          "TaskID": 3,
+          "TaskName": "Defining target audience",
+          "StartDate": "2019-04-01T21:00:00.000Z",
+          "Duration": 3
+        },
+        {
+          "TaskID": 4,
+          "TaskName": "Prepare product sketch and notes",
+          "StartDate": "2019-04-01T21:00:00.000Z",
+          "Duration": 2,
+          "Predecessor": "2",
+          "Progress": 30
+        }
+      ]
+    },
+    {
+      "TaskID": 5,
+      "TaskName": "Concept approval",
+      "StartDate": "2019-04-01T21:00:00.000Z",
+      "Duration": 0,
+      "Predecessor": "3,4",
+      "Indicators": [
+        {
+          "date": "04/10/2019",
+          "name": "Design Phase",
+          "tooltip": "Design phase completed",
+          "iconClass": "okIcon e-icons"
+        }
+      ]
+    },
+    {
+      "TaskID": 6,
+      "TaskName": "Market research",
+      "StartDate": "2019-04-01T21:00:00.000Z",
+      "EndDate": "2019-04-20T21:00:00.000Z",
+      "subtasks": [
+        {
+          "TaskID": 7,
+          "TaskName": "Demand analysis",
+          "StartDate": "2019-04-03T21:00:00.000Z",
+          "EndDate": "2019-04-20T21:00:00.000Z",
+          "subtasks": [
+            {
+              "TaskID": 8,
+              "TaskName": "Customer strength",
+              "StartDate": "2019-04-03T21:00:00.000Z",
+              "Duration": 4,
+              "Predecessor": "5",
+              "Progress": 30
+            },
+            {
+              "TaskID": 9,
+              "TaskName": "Market opportunity analysis",
+              "StartDate": "2019-04-03T21:00:00.000Z",
+              "Duration": 4,
+              "Predecessor": "5"
+            }
+          ]
+        },
+        {
+          "TaskID": 10,
+          "TaskName": "Competitor analysis",
+          "StartDate": "2019-04-03T21:00:00.000Z",
+          "Duration": 4,
+          "Predecessor": "7, 8",
+          "Progress": 30
+        },
+        {
+          "TaskID": 11,
+          "TaskName": "Product strength analsysis",
+          "StartDate": "2019-04-03T21:00:00.000Z",
+          "Duration": 4,
+          "Predecessor": "9"
+        },
+        {
+          "TaskID": 12,
+          "TaskName": "Research complete",
+          "StartDate": "2019-04-03T21:00:00.000Z",
+          "Duration": 0,
+          "Predecessor": "10",
+          "Indicators": [
+            {
+              "date": "04/20/2019",
+              "name": "Research completed",
+              "tooltip": "Research completed",
+              "iconClass": "description e-icons"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "TaskID": 13,
+      "TaskName": "Product design and development",
+      "StartDate": "2019-04-03T21:00:00.000Z",
+      "EndDate": "2019-04-20T21:00:00.000Z",
+      "subtasks": [
+        {
+          "TaskID": 14,
+          "TaskName": "Functionality design",
+          "StartDate": "2019-04-03T21:00:00.000Z",
+          "Duration": 3,
+          "Progress": 30,
+          "Predecessor": "12"
+        },
+        {
+          "TaskID": 15,
+          "TaskName": "Quality design",
+          "StartDate": "2019-04-03T21:00:00.000Z",
+          "Duration": 3,
+          "Predecessor": "12"
+        },
+        {
+          "TaskID": 16,
+          "TaskName": "Define reliability",
+          "StartDate": "2019-04-03T21:00:00.000Z",
+          "Duration": 2,
+          "Progress": 30,
+          "Predecessor": "15"
+        },
+        {
+          "TaskID": 17,
+          "TaskName": "Identifying raw materials",
+          "StartDate": "2019-04-03T21:00:00.000Z",
+          "Duration": 2,
+          "Predecessor": "15"
+        },
+        {
+          "TaskID": 18,
+          "TaskName": "Define cost plan",
+          "StartDate": "2019-04-03T21:00:00.000Z",
+          "EndDate": "2019-04-20T21:00:00.000Z",
+          "subtasks": [
+            {
+              "TaskID": 19,
+              "TaskName": "Manufacturing cost",
+              "StartDate": "2019-04-03T21:00:00.000Z",
+              "Duration": 2,
+              "Progress": 30,
+              "Predecessor": "17"
+            },
+            {
+              "TaskID": 20,
+              "TaskName": "Selling cost",
+              "StartDate": "2019-04-03T21:00:00.000Z",
+              "Duration": 2,
+              "Predecessor": "17"
+            }
+          ]
+        },
+        {
+          "TaskID": 21,
+          "TaskName": "Development of the final design",
+          "StartDate": "2019-04-03T21:00:00.000Z",
+          "EndDate": "2019-04-20T21:00:00.000Z",
+          "subtasks": [
+            {
+              "TaskID": 22,
+              "TaskName": "Defining dimensions and package volume",
+              "StartDate": "2019-04-03T21:00:00.000Z",
+              "Duration": 2,
+              "Progress": 30,
+              "Predecessor": "19,20"
+            },
+            {
+              "TaskID": 23,
+              "TaskName": "Develop design to meet industry standards",
+              "StartDate": "2019-04-03T21:00:00.000Z",
+              "Duration": 2,
+              "Predecessor": "22"
+            },
+            {
+              "TaskID": 24,
+              "TaskName": "Include all the details",
+              "StartDate": "2019-04-03T21:00:00.000Z",
+              "Duration": 3,
+              "Predecessor": "23"
+            }
+          ]
+        },
+        {
+          "TaskID": 25,
+          "TaskName": "CAD computer-aided design",
+          "StartDate": "2019-04-03T21:00:00.000Z",
+          "Duration": 3,
+          "Progress": 30,
+          "Predecessor": "24"
+        },
+        {
+          "TaskID": 26,
+          "TaskName": "CAM computer-aided manufacturing",
+          "StartDate": "2019-04-03T21:00:00.000Z",
+          "Duration": 3,
+          "Predecessor": "25"
+        },
+        {
+          "TaskID": 27,
+          "TaskName": "Design complete",
+          "StartDate": "2019-04-03T21:00:00.000Z",
+          "Duration": 0,
+          "Predecessor": "26"
+        }
+      ]
+    },
+    {
+      "TaskID": 28,
+      "TaskName": "Prototype testing",
+      "StartDate": "2019-04-03T21:00:00.000Z",
+      "Duration": 4,
+      "Progress": 30,
+      "Predecessor": "27"
+    },
+    {
+      "TaskID": 29,
+      "TaskName": "Include feedback",
+      "StartDate": "2019-04-03T21:00:00.000Z",
+      "Duration": 4,
+      "Predecessor": "28ss",
+      "Indicators": [
+        {
+          "date": "05/24/2019",
+          "name": "Production phase",
+          "tooltip": "Production phase completed",
+          "iconClass": "okIcon e-icons"
+        }
+      ]
+    },
+    {
+      "TaskID": 30,
+      "TaskName": "Manufacturing",
+      "StartDate": "2019-04-03T21:00:00.000Z",
+      "Duration": 5,
+      "Progress": 30,
+      "Predecessor": "28,29"
+    },
+    {
+      "TaskID": 31,
+      "TaskName": "Assembling materials to finsihed goods",
+      "StartDate": "2019-04-03T21:00:00.000Z",
+      "Duration": 5,
+      "Predecessor": "30"
+    },
+    {
+      "TaskID": 32,
+      "TaskName": "Feedback and testing",
+      "StartDate": "2019-04-03T21:00:00.000Z",
+      "EndDate": "2019-04-20T21:00:00.000Z",
+      "subtasks": [
+        {
+          "TaskID": 33,
+          "TaskName": "Internal testing and feedback",
+          "StartDate": "2019-04-03T21:00:00.000Z",
+          "Duration": 3,
+          "Progress": 45,
+          "Predecessor": "31"
+        },
+        {
+          "TaskID": 34,
+          "TaskName": "Customer testing and feedback",
+          "StartDate": "2019-04-03T21:00:00.000Z",
+          "Duration": 3,
+          "Progress": 50,
+          "Predecessor": "33"
+        }
+      ]
+    },
+    {
+      "TaskID": 35,
+      "TaskName": "Final product development",
+      "StartDate": "2019-04-03T21:00:00.000Z",
+      "EndDate": "2019-04-20T21:00:00.000Z",
+      "subtasks": [
+        {
+          "TaskID": 36,
+          "TaskName": "Important improvements",
+          "StartDate": "2019-04-03T21:00:00.000Z",
+          "Duration": 4,
+          "Progress": 30,
+          "Predecessor": "34"
+        },
+        {
+          "TaskID": 37,
+          "TaskName": "Address any unforeseen issues",
+          "StartDate": "2019-04-03T21:00:00.000Z",
+          "Duration": 4,
+          "Progress": 30,
+          "Predecessor": "36ss",
+          "Indicators": [
+            {
+              "date": "06/21/2019",
+              "name": "Sales and marketing",
+              "tooltip": "Sales and marketing",
+              "iconClass": "description e-icons"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "TaskID": 38,
+      "TaskName": "Final product",
+      "StartDate": "2019-04-03T21:00:00.000Z",
+      "EndDate": "2019-04-20T21:00:00.000Z",
+      "subtasks": [
+        {
+          "TaskID": 39,
+          "TaskName": "Branding product",
+          "StartDate": "2019-04-03T21:00:00.000Z",
+          "Duration": 4,
+          "Predecessor": "37"
+        },
+        {
+          "TaskID": 40,
+          "TaskName": "Marketing and presales",
+          "StartDate": "2019-04-03T21:00:00.000Z",
+          "Duration": 4,
+          "Progress": 30,
+          "Predecessor": "39"
+        }
+      ]
+    }
+  ]
+}
